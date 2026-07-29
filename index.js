@@ -5,11 +5,16 @@
  * @param { string } name
  */
 function formatName (name) {
-  const partes = name.split(" ");
 
-  console.log(partes);
+  console.log('Iniciando function formatName');
 
-  const formatedName = partes.map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(" ");
+  const partes = name.toLocaleLowerCase().split(' ');
 
-  console.log(formatedName);
+  console.log(`Palavras: ${partes}`);
+
+  const formatedName = partes.map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
+
+  console.log(`Nome formatado: ${formatedName}`);
 }
+
+module.exports = { formatName };
