@@ -15,6 +15,8 @@ function formatName (name) {
   const formatedName = partes.map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
 
   console.log(`Nome formatado: ${formatedName}`);
+
+  return formatedName;
 }
 
 module.exports = { formatName };
