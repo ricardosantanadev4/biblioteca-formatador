@@ -1,3 +1,5 @@
 const formatador = require("./index");
 
-formatador.formatName("rIcarDo sIlva");
+const nomeFormatado =  formatador.formatName("rIcarDo sIlva");
+
+console.log(`Nome formatado: ${nomeFormatado}`);
