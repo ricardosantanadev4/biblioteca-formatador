@@ -6,7 +6,7 @@
  */
 function formatName (name) {
 
-  const partes = name.toLocaleLowerCase().split(' ');
+  const partes = name.toLowerCase().split(' ');
 
   const formatedName = partes.map(p => p.charAt(0).toUpperCase() + p.slice(1)).join(' ');
 
